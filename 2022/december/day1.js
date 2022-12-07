@@ -251,10 +251,10 @@ let ppl = [
     [2124,7143,6779,2022,2034,9093,4122,1303,5054]
 ];
 
-let max=0;
+let max = 0;
 ppl.forEach(_person => {
     let sum =_person.reduce((_prev, _curr) => _prev + _curr, 0);
-    max = (sum > max)? sum : max
+    max = (sum > max)? sum : max;
 });
 
 console.log(max);
